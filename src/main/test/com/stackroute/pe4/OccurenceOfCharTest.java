@@ -7,11 +7,11 @@ import org.junit.Test;
 import static org.junit.Assert.*;
 
 public class OccurenceOfCharTest {
-    OccurenceOfChar obj;
+    OccurrenceOfChar obj;
 
     @Before
     public void setUp() throws Exception {
-        obj=new OccurenceOfChar();
+        obj=new OccurrenceOfChar();
     }
 
     @After
@@ -20,21 +20,21 @@ public class OccurenceOfCharTest {
     @Test
     public void checkNumOfCharTest(){
         String input="rammmmmmmmmm";
-        assertEquals(10,obj.countOccurence(input,'m'));
+        assertEquals(10,obj.countOccurrence(input,'m',0));
     }
     @Test
     public void checkNumOfCharSuccessTest(){
         String input="raniiiiiiii";
-        assertEquals(8,obj.countOccurence(input,'i'));
+        assertEquals(8,obj.countOccurrence(input,'i',0));
     }
     @Test
     public void checkNumOfCharWithSpecialCharInputTest(){
         String input="ra@@@@@@";
-        assertEquals(1,obj.countOccurence(input,'r'));
+        assertEquals(1,obj.countOccurrence(input,'r',0));
     }
     @Test
     public void checkNumOfCharWithSpecialCharInStartOfInputTest(){
         String input="@@.rammmmmmmmmm";
-        assertEquals(1,obj.countOccurence(input,'a'));
+        assertEquals(1,obj.countOccurrence(input,'a',0));
     }
 }
