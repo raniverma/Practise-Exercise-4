@@ -1,7 +1,7 @@
 package com.stackroute.pe4;
 
 public class OccurrenceOfChar {
-
+    /*count occurrence of a character in a string*/
     public long countOccurrence(String input, final char m,int index) {
             if (index >= input.length()) {
                 return 0;

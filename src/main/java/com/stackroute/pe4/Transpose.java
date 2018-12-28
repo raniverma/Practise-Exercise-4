@@ -1,6 +1,7 @@
 package com.stackroute.pe4;
 
 public class Transpose {
+    /*Method to peint the transpose  of a given string */
     public String transposeString(String input){
         if(input==null)
             return null;
